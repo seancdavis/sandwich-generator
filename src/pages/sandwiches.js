@@ -4,14 +4,14 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const SandwichesPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>This is where you will generate a new sandwich ...</p>
+    <h1>Sandwiches</h1>
+    <p>This is a list of sandwiches ...</p>
 
-    <Link to="/sandwiches/">Go to the list</Link>
+    <Link to="/">Go home</Link>
   </Layout>
 )
 
-export default IndexPage
+export default SandwichesPage

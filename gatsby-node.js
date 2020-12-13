@@ -1,7 +1,10 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
+const path = require("path")
 
-// You can delete this file if you're not using it
+exports.createPages = async ({ actions }) => {
+  // Generate dynamic routes for sandwiches.
+  actions.createPage({
+    path: "/sandwich-details/",
+    matchPath: "/sandwiches/:id",
+    component: path.resolve("src/templates/sandwich.js"),
+  })
+}
